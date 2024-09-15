@@ -9,7 +9,7 @@ function CnaMo() {
   const [datetime,setdatetime]=useState("")
   const [city,setcity]=useState("Cairo")
 
-
+   let date_ = new Date();
 
   const citise = [
   {name:"القاهرة" , value:"Cairo"},
@@ -24,7 +24,7 @@ function CnaMo() {
 useEffect(() => {
     const fetchPayarTime = async () => {
       try {
-        const response = await fetch(`https://api.aladhan.com/v1/timingsByCity/14-09-2024?date=03-09-2024&city=${city}&country=EG`)
+        const response = await fetch(`https://api.aladhan.com/v1/timingsByCity/${date_.getDate()}-${date_.getMonth()+1}-${date_.getFullYear()}?date=03-09-2024&city=${city}&country=EG`)
         const data_prayar = await response.json()
 
         setprayartime(data_prayar.data.timings)
