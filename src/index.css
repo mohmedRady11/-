@@ -1,13 +1,99 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&family=Cairo:wght@200..1000&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Cairo Play", sans-serif;
+}
+html{
+    direction: rtl;
+}
+.contaner{
+    min-height: 102vh;
+    background-image: url(assets/images/egypt_ramadan_4k-3840x2160.jpg);
+    background-position: center;
+    background-size: cover;
+        display: flex;
+        align-items: center;
+
+}
+.contaner .contaner-date{
+    width: 550px;
+    background-color: #332a224e;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid #d7d7d74e;
+    margin-right: 15%;
+}
+.contaner .top-date{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+display: flex;
+justify-content: space-between;
+border-bottom: 1px solid #d7d7d74e;
+margin-bottom: 30px;
+padding-bottom: 20px;
+padding-top: 10px;
+}
+.contaner .top-date .sec1 h3{
+    font-size: 26px;
+    color: #efff;
+    padding: 10px;
+}
+.contaner .top-date .sec1 select{
+    width: 250px;
+    font-size: 22px;
+    color: #efff;
+    padding: 5px 10px;
+    outline: none;
+    background-color: #c18746;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.contaner .top-date .sec2 h3,h4 {
+    font-size: 26px;
+    color: #efff;
+    padding: 10px;
+    margin-left: 60px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* --------------------------------------- */
+
+.scound-date{
+    display: flex;
+    justify-content: space-between;
+    background-color: #c18746;
+    color: #efff;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+
+/* ---------------------------- */
+
+.footer{
+        width: 100%;
+        min-height: 50px;
+        background-color: #c18746;
+        color: #efff;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+}
+.footer h1{
+    margin: 0;
+    padding: 0;
+}
+.footer span {
+    color: black !important;
 }
